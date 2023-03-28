@@ -2,7 +2,8 @@
 <Configuration status="ERROR">
     <Appenders>
         <RollingFile name="LogToFile" fileName="logs/hippodrome.log"
-                     filePattern="logs/hippodrome.%d{yyyy-MM-dd}.log">
+                     filePattern="logs/hippodrome.%d{yyyy-MM-dd}.log"
+                     ignoreExceptions="false">
                         <PatternLayout pattern="%d %-5p %c: %m%n"/>
             <TimeBasedTriggeringPolicy/>
             <DefaultRolloverStrategy>
